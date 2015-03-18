@@ -1,11 +1,11 @@
 # abc
-a android awesome log recorder from ingenic:
+a android awesome log recorder from ingenic.
 
 
 # how to use
-1. you can put the abc module to external/ in framework code path.
+* 1. you can put the abc module to external/ in framework code path.
 
-2. add the abc module to the build mk file:
+* 2. add the abc module to the build mk file:
   e.g: device/vendor/product/device.mk:  
 
 <pre>
@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     device/$(VENDOR)/$(TARGET_PRODUCT)/init.$(TARGET_BOARD_HARDWARE).rc:root/init.$(TARGET_BOARD_HARDWARE).rc \
 </pre>
 
-3. add the abc daemon process in init.rc:
+* 3. add the abc daemon process in init.rc:
   e.g: device/vendor/product/init.board.rc:
 
 <pre>
@@ -38,10 +38,10 @@ on property:ro.build.type=eng
 
 abc(android bug collector) is an automatic bug report tool.It has four functions:
 
-1.record kernel log
-2.record logcat log
-3.record process 
-4.send mail
+1. record kernel log
+2. record logcat log
+3. record process 
+4. send mail
 
 Before use it should config it,very simple
 
