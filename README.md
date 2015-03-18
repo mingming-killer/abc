@@ -3,10 +3,9 @@ a android awesome log recorder from ingenic.
 
 
 # how to use
-* 1. you can put the abc module to external/ in framework code path.
+1: you can put the abc module to external/ in framework code path.
 
-* 2. add the abc module to the build mk file:
-  e.g: device/vendor/product/device.mk:  
+2: add the abc module to the build mk file: e.g: device/vendor/product/device.mk:  
 
 <pre>
 # when in eng we add the abc log recorder.
@@ -19,8 +18,7 @@ PRODUCT_COPY_FILES += \
     device/$(VENDOR)/$(TARGET_PRODUCT)/init.$(TARGET_BOARD_HARDWARE).rc:root/init.$(TARGET_BOARD_HARDWARE).rc \
 </pre>
 
-* 3. add the abc daemon process in init.rc:
-  e.g: device/vendor/product/init.board.rc:
+3: add the abc daemon process in init.rc: e.g: device/vendor/product/init.board.rc:
 
 <pre>
 # abc daemon process
